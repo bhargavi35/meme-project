@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MemeVerse - The Ultimate Meme Hub
 
-## Getting Started
+MemeVerse is a multi-page, interactive website where users can explore, upload, and engage with memes. Built with Next.js and Tailwind CSS, it provides a modern, responsive, and fun experience for meme enthusiasts.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+*   **Trending Memes (Homepage):** Dynamically displays trending memes fetched from the Imgflip API.
+*   **Meme Explorer:** Browse memes, filter by category (Trending, New, Classic - *implementation in progress*), and search.
+*   **Meme Upload:** Upload your own meme images and add witty captions. (*AI-based caption generation and image hosting integration in progress*)
+*   **Meme Details:** View detailed information about a meme, like it, and add comments.
+*   **User Profiles:** See user-uploaded memes and edit profile information. (*Persistence and user authentication to be implemented.*)
+*   **Leaderboard:** View the top 10 most liked memes and user rankings. (*Data source needs to be connected.*)
+*   **Dark Mode:** Toggle between light and dark themes for comfortable browsing.
+*   **Responsive Design:** Enjoy MemeVerse on any device, from desktops to smartphones.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+*   **Frontend:** Next.js (React), Tailwind CSS, Framer Motion
+*   **API:** Imgflip API (for meme data), (*ImgBB or similar for image hosting - to be integrated*), (*AI caption generation API - to be integrated*)
+*   **State Management:** React's `useState` and `useEffect` hooks.
+*   **Local Storage:** Used for storing likes and comments.
+*   **Deployment:** Vercel or Netlify.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Setup
 
-## Learn More
+1.  **Clone the repository:**
+    ```
+    git clone [your repository link here]
+    ```
+2.  **Install dependencies:**
+    ```
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
+3.  **Set up environment variables:**
+    *   Create a `.env.local` file.
+    *   Add your ImgBB API key:
 
-To learn more about Next.js, take a look at the following resources:
+        ```
+        NEXT_PUBLIC_IMGBB_API_KEY=YOUR_IMGBB_API_KEY
+        ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4.  **Run the development server:**
+    ```
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Known Issues and Future Improvements
 
-## Deploy on Vercel
+*   **Filtering and Searching in Meme Explorer:** The Imgflip API doesn't natively support filtering or searching. A different meme API or client-side filtering is needed for complete implementation.
+*   **AI Caption Generation and Image Hosting:** Integration with a real AI caption generation API and image hosting service (like ImgBB) are planned.
+*   **User Authentication and Persistence:** Implementing user accounts, persistent data storage (database), and authentication.
+*   **Leaderboard Data:** Connecting the leaderboard to a dynamic data source (database) to accurately reflect meme popularity and user engagement.
+*   **Responsiveness:** Further optimization and testing across different devices and screen sizes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Contributors**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+👨‍💻 **Bhargavi Chella** – _Full Stack Developer_  
+📩 Email: chellabhargavi2002@gmail.com  
+📌 LinkedIn: [https://www.linkedin.com/in/bhargavichella/] 
+📌 Portfolio: [https://bhargavi35-portfolio.vercel.app/]
+
